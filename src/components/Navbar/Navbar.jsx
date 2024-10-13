@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNav from "./MobileNav/MobileNav";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { AiOutlineDownload } from "react-icons/ai";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const toggleMenu = () => {
@@ -43,9 +44,10 @@ const Navbar = () => {
                 download="Akther_Hosen_Resume.pdf"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="bg-primary text-white uppercase text-xs font-bold px-3 py-2 rounded-full"
+                className="bg-primary flex items-center gap-2 text-white uppercase text-xs font-bold px-3 py-2 rounded-full"
               >
-                Download Resume
+                Download Resume{" "}
+                <AiOutlineDownload className=" text-sm font-bold" />
               </motion.a>
             </li>
           </ul>

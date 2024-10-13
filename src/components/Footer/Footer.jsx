@@ -10,7 +10,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="min-h-[200px] mt-10  py-10 px-4 ">
+    <footer className="min-h-[200px] mt-2  py-10 px-4 ">
       <div className="flex flex-col items-center justify-center space-y-2">
         <img src={Profile} className="h-10 w-10 rounded-full" alt="" />
         <h4 className="font-title text-primary font-normal text-xl tracking-widest">
@@ -45,9 +45,9 @@ const Footer = () => {
       </div>
       <hr className="my-4" />
       <div className="flex justify-between">
-        <p className="font-primary italic">
+        <p className="font-primary italic text-sm">
           All right reserved,2024{" "}
-          <span className="font-title text-primary font-semibold">
+          <span className="font-title text-primary font-semibold tracking-widest">
             {" "}
             @Akther
           </span>

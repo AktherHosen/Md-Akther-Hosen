@@ -22,7 +22,7 @@ const About = () => {
             initial={{ y: -10 }}
             whileInView={{ y: 0 }}
             transition={{ duration: "1" }}
-            className="uppercase font-semibold text-xl"
+            className="uppercase font-semibold text-xl mb-2"
           >
             introduction
           </motion.h4>
@@ -44,7 +44,7 @@ const About = () => {
                 initial={{ y: -10 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: "1" }}
-                className="uppercase font-semibold text-xl"
+                className="uppercase font-semibold text-xl mb-2"
               >
                 education
               </motion.h4>
@@ -57,7 +57,7 @@ const About = () => {
                 initial={{ y: -10 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: "1" }}
-                className="uppercase font-semibold text-xl"
+                className="uppercase font-semibold text-xl mb-2"
               >
                 Experience
               </motion.h4>
