@@ -4,8 +4,15 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#404258",
+        primary: "#DC0155",
         secondary: "#474E68",
+      },
+      textColor: {
+        primary: "#DC0155",
+      },
+      fontFamily: {
+        primary: "'Mulish', sans-serif",
+        title: "'Satisfy', cursive",
       },
     },
   },

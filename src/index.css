@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Satisfy&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #404258;
-  color: rgb(213, 210, 210);
+  max-width: 1240px;
+  margin: 0 auto;
 }
