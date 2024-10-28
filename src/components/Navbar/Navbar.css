@@ -15,10 +15,6 @@
   align-items: center;
 }
 
-.logo {
-  width: 70px;
-  height: 35px;
-}
 .nav-content ul {
   display: flex;
   align-items: center;

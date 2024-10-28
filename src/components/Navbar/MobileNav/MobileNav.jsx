@@ -10,26 +10,40 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
       onClick={toggleMenu}
     >
       <div className="mobile-menu-container">
-        <img src={logo} className="logo" alt="" />
+        <div className="flex justify-start">
+          <img src={logo} className="h-20 -ms-2" alt="" />
+        </div>
 
         <ul>
           <li>
-            <a href="#" className="menu-item">
+            <a
+              href="#"
+              className="menu-item hover:underline hover:underline-offset-4"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="menu-item">
+            <a
+              href="#about"
+              className="menu-item hover:underline hover:underline-offset-4"
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#works" className="menu-item">
+            <a
+              href="#works"
+              className="menu-item hover:underline hover:underline-offset-4"
+            >
               Works
             </a>
           </li>
           <li>
-            <a href="#contact" className="menu-item">
+            <a
+              href="#contact"
+              className="menu-item hover:underline hover:underline-offset-4"
+            >
               Contact
             </a>
           </li>
@@ -40,7 +54,7 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               download="Akther_Hosen_Resume.pdf"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-white text-primary uppercase text-xs font-bold px-3 py-2 rounded-sm flex items-center justify-center gap-2"
+              className="bg-white text-primary uppercase text-xs font-bold px-3 py-2 rounded-sm flex items-center gap-2 w-fit"
             >
               Download Resume{" "}
               <AiOutlineDownload className=" font-bold text-sm" />

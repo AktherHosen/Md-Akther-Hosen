@@ -1,134 +1,97 @@
 import React from "react";
-import SectionTitle from "../SectionTitle";
 import Container from "../Container";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebookSquare, FaGithub } from "react-icons/fa";
-import { BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { FiSend } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { FaHandshake } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaWhatsapp } from "react-icons/fa";
+import Facebook from "../../assets/icons/facebook.png";
+import GitHub from "../../assets/icons/github.png";
+import Linkedin from "../../assets/icons/linkedin.png";
+import Twitter from "../../assets/icons/twitter.png";
+
 const Contact = () => {
   return (
     <>
       <Container>
-        <SectionTitle title="Contact" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4">
-          <div className="space-y-3">
-            <motion.h4
-              initial={{ y: -10 }}
-              whileInView={{ y: 0 }}
-              transition={{ duration: "1" }}
-              className="text-3xl font-semibold font-primary"
-            >
-              Let's Work Together Today!
-            </motion.h4>
-            <motion.p
-              initial={{ y: 10 }}
-              whileInView={{ y: 0 }}
-              transition={{ duration: "1" }}
-              className="text-lg font-primary"
-            >
-              Reach out today to discuss your project needs and start
-              collaborating on something amazing!
-            </motion.p>
-            <div className="flex gap-4">
-              <Link to="https://github.com/AktherHosen/" target="_blank">
-                <FaGithub
-                  size={20}
-                  className="hover:text-primary transition-all duration-300 hover:-translate-y-1 "
-                />
-              </Link>
-
-              <Link
-                to="https://www.linkedin.com/in/md-akther-hosen"
-                target="_blank"
-              >
-                <BsLinkedin
-                  size={20}
-                  className="hover:text-primary transition-all  duration-300 hover:-translate-y-1"
-                />
-              </Link>
-              <Link
-                to="https://www.facebook.com/nirjhor.nowshad/"
-                target="_blank"
-              >
-                <FaFacebookSquare
-                  size={20}
-                  className="hover:text-primary transition-all  duration-300 hover:-translate-y-1"
-                />
-              </Link>
-              <Link to="https://x.com/AktherHosen165" target="_blank">
-                {" "}
-                <FaXTwitter
-                  size={20}
-                  className="hover:text-primary transition-all  duration-300 hover:-translate-y-1"
-                />
-              </Link>
-            </div>
+        <div
+          id="contact"
+          className="flex flex-col justify-center items-center gap-y-4"
+        >
+          <div className="bg-primary rounded-full w-[100px] h-[100px] flex items-center justify-center text-white">
+            <FaHandshake size={60} className="px-1" />
           </div>
-          <div className="bg-primary min-h-[200px] rounded-2xl p-6">
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              className="space-y-2"
+          <h1 className="text-3xl font-semibold font-primary max-w-md text-center">
+            Discuss me about your next Project
+          </h1>
+          <div className="flex gap-3">
+            <motion.a
+              whileTap={{ scale: 0.9 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 25,
+              }}
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=mdaktherhosen16@gmail.com"
+              target="_blank"
+              className="flex items-center justify-between gap-x-2 bg-primary text-white border px-6 py-2.5 rounded-md"
             >
-              <input
-                type="hidden"
-                name="access_key"
-                value="32621581-e9cf-449e-bf84-2252566a6d6b"
-              ></input>
-              <div className="flex justify-between gap-2">
-                <div className="w-1/2">
-                  <label
-                    htmlFor="name"
-                    className="text-white block text-xs mb-1 font-semibold"
-                  >
-                    Name
-                  </label>
-                  <input
-                    name="name"
-                    type="text"
-                    placeholder="Enter your name "
-                    className="px-2 py-1 rounded-md w-full outline-none"
-                  />
-                </div>
-                <div className="w-1/2">
-                  <label
-                    htmlFor="email"
-                    className="text-white block text-xs mb-1 font-semibold"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email "
-                    required
-                    className="px-2 py-1 rounded-md w-full outline-none"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="text-white block text-xs mb-1 font-semibold"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id=""
-                  className="resize-none px-2 h-20 rounded-md w-full outline-none decoration-black"
-                  placeholder="Write your message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="bg-white flex items-center gap-2 text-sm font-bold text-primary w-fit rounded-md px-2 py-1"
-              >
-                Start <FiSend className="text-sm" />
-              </button>
-            </form>
+              <AiOutlineMail size={20} />
+              Email Me
+            </motion.a>
+
+            <motion.a
+              whileTap={{ scale: 0.9 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 25,
+              }}
+              href="https://wa.me/1610945101"
+              target="_blank"
+              className="flex items-center justify-between gap-x-2 text-primary border px-6 hover:bg-primary hover:text-white transition-colors duration-300 py-2.5 rounded-md"
+            >
+              <FaWhatsapp size={20} />
+              WhatsApp
+            </motion.a>
+          </div>
+          <div className="flex justify-center items-center gap-3 border px-6 py-0.5 rounded-md">
+            <Link to="https://github.com/AktherHosen/" target="_blank">
+              <img
+                src={GitHub}
+                alt="linkedin"
+                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[29px]"
+              />
+            </Link>
+
+            <Link
+              to="https://www.linkedin.com/in/md-akther-hosen"
+              target="_blank"
+            >
+              <img
+                src={Linkedin}
+                alt="linkedin"
+                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[38px]"
+              />
+            </Link>
+            <Link
+              to="https://www.facebook.com/nirjhor.nowshad/"
+              target="_blank"
+            >
+              <img
+                src={Facebook}
+                alt="linkedin"
+                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[38px]"
+              />
+            </Link>
+            <Link to="https://x.com/AktherHosen165" target="_blank">
+              {" "}
+              <img
+                src={Twitter}
+                alt="linkedin"
+                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[38px]"
+              />
+            </Link>
           </div>
         </div>
       </Container>

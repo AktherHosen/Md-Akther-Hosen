@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <Container>
-      <SectionTitle title="About Me" />
       <div
         id="about"
         className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-between p-0"

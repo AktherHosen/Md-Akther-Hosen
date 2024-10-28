@@ -1,9 +1,5 @@
-import React from "react";
 import Profile from "../../assets/profile.jpg";
-// react icons
-import { CgFacebook } from "react-icons/cg";
-import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { SlArrowUp } from "react-icons/sl";
+import { BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
