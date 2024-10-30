@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "../Container";
-import Project from "../../assets/project.png";
 import { FaGithub, FaLink } from "react-icons/fa";
 import SectionTitle from "../SectionTitle";
 import { motion } from "framer-motion";

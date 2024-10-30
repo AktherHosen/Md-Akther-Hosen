@@ -18,9 +18,14 @@ const Contact = () => {
           id="contact"
           className="flex flex-col justify-center items-center gap-y-4"
         >
-          <div className="bg-primary rounded-full w-[100px] h-[100px] flex items-center justify-center text-white">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2 }}
+            className="bg-primary rounded-full w-[100px] h-[100px] flex items-center justify-center text-white"
+          >
             <FaHandshake size={60} className="px-1" />
-          </div>
+          </motion.div>
           <h1 className="text-3xl font-semibold font-primary max-w-md text-center">
             Discuss me about your next Project
           </h1>
