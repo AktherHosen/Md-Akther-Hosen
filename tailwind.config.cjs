@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         primary: "'Mulish', sans-serif",
         title: "'Satisfy', cursive",
+        caratte: "'Carattere', handwriting",
       },
     },
   },

@@ -12,14 +12,16 @@ const Banner = () => {
       <div className="w-full bg-[#fff] rounded-md relative min-h-[500px]">
         {/* header */}
         <header className="flex lg:flex-row flex-col-reverse items-center gap-12 lg:gap-0  lg:justify-between  mt-14 px-2">
-          <div className="w-full lg:w-[45%] flex flex-col items-center lg:items-start text-center lg:text-start">
+          <div className="w-full lg:w-[55%] flex flex-col items-center lg:items-start text-center lg:text-start space-y-4">
             <p>Hi there!</p>
-            <h1 className="text-[30px]  sm:text-[60px] font-semibold leading-[45px] sm:leading-[70px]">
-              <span className="text-primary font-title">Akther</span> is here to
-              be your assistance
+            <h1 className="text-[30px]  sm:text-[60px] font-semibold sm:leading-[70px]">
+              <span className="text-primary font-caratte font-bold">
+                Akther
+              </span>{" "}
+              is here to be your assistance
             </h1>
 
-            <h3 className="text-lg mb-4">
+            <h3 className="text-lg">
               I'm your{" "}
               <span className="uppercase text-xl text-primary font-semibold">
                 <Typewriter

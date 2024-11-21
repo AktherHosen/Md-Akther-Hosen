@@ -16,7 +16,6 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper font-primary">
         <div className="nav-content">
-          {/* <h1 className="font-title text-2xl font-bold lg:px-4">Akther</h1> */}
           <div className="flex justify-start bg-primary rounded-md">
             <img src={logo} className="h-10 w-12 -ms-0.5 " alt="" />
           </div>
