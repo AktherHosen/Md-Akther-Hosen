@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky-navbar flex items-center justify-between w-full   px-4  h-[60px] py-6">
+    <nav className="sticky-navbar flex items-center justify-between w-full px-4 h-[60px] py-6">
       <div className="bg-primary rounded-md h-[40px] w-[40px]">
         <img src={logo} alt="logo" className="h-fit w-fit" />
       </div>
@@ -83,12 +83,11 @@ const Navbar = () => {
         </motion.div>
       </div>
 
+      {/* Sidebar */}
       <aside
         className={`${
-          mobileSidebarOpen
-            ? "translate-x-0 opacity-100 z-20"
-            : "translate-x-[200px] opacity-0 z-[-1]"
-        } lg:hidden bg-primary text-white boxShadow p-4 text-start absolute z-100 top-[65px] right-1 max-w-max rounded-md transition-all duration-300`}
+          mobileSidebarOpen ? "block" : "hidden"
+        } lg:hidden bg-primary text-white boxShadow p-4 text-start absolute top-[65px] right-1 max-w-[200px] rounded-md transition-all duration-300`}
       >
         <ul className="items-center gap-[2px] text-[1rem] flex flex-col">
           <li className="py-1">
@@ -128,9 +127,8 @@ const Navbar = () => {
               href="https://drive.google.com/uc?export=download&id=1i--qbJEIa6hNs-l47rRZ9FCffezr_AxT"
               target="_blank"
               download="Akther_Hosen_Resume.pdf"
-              whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-white flex items-center gap-2 text-primary uppercase text-xs font-bold px-4 py-2 rounded-md"
+              className="bg-white flex items-center gap-2 text-primary uppercase text-xs font-bold px-2 py-2 rounded-md"
             >
               Download Resume{" "}
               <AiOutlineDownload className="text-sm font-bold" />
