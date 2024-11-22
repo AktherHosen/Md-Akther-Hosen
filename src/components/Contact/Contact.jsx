@@ -19,7 +19,7 @@ const Contact = () => {
           className="flex flex-col justify-center items-center gap-y-4"
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.6 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2 }}
             className="bg-primary rounded-full w-[100px] h-[100px] flex items-center justify-center text-white"
