@@ -14,17 +14,17 @@ const Navbar = () => {
     open: {
       rotate: 180,
       scale: 1.2,
-      transition: { type: "spring", stiffness: 300, damping: 30 },
+      transition: { type: "spring", stiffness: 300, damping: 50 },
     },
     closed: {
       rotate: 0,
       scale: 1,
-      transition: { type: "spring", stiffness: 300, damping: 30 },
+      transition: { type: "spring", stiffness: 300, damping: 50 },
     },
   };
 
   return (
-    <nav className="sticky-navbar flex items-center justify-between w-full   px-[10px]  h-[60px] py-6">
+    <nav className="sticky-navbar flex items-center justify-between w-full   px-4  h-[60px] py-6">
       {/* Logo Section */}
       <div className="bg-primary rounded-md h-[40px] w-[40px]">
         <img src={logo} alt="logo" className="h-fit w-fit" />
@@ -95,7 +95,7 @@ const Navbar = () => {
         <ul className="items-center gap-[2px] text-[1rem] flex flex-col">
           <li className="py-1">
             <a
-              href=""
+              href="#"
               className="block hover:before:w-full before:bg-white before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-white transition-all duration-300 before:left-0"
             >
               Home
