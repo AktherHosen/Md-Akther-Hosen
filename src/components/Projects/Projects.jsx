@@ -9,7 +9,7 @@ const Projects = () => {
     <Container>
       <SectionTitle title="Latest Project" />
       <div
-        id="works"
+        id="project"
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 "
       >
         <motion.div

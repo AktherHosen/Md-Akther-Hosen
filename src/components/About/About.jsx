@@ -2,18 +2,16 @@ import React from "react";
 import Container from "../Container";
 import Profile from "../../assets/profile.jpg";
 import Skils from "../Skils/Skils";
-import SectionTitle from "../SectionTitle";
 import { motion } from "framer-motion";
 const About = () => {
   return (
     <Container>
       <div
         id="about"
-        className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-between p-0"
+        className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-between p-0 "
       >
-        <div className="w-full lg:w-1/3 flex justify-center lg:justify-start  relative">
+        <div className="w-full lg:w-1/3 flex justify-center lg:justify-start ">
           <img src={Profile} alt="image" className="h-80 w-72 z-10" />
-          <div className="bg-gray-100 opacity-100 h-80 w-72 shadow-sm absolute  translate-x-4 translate-y-4"></div>
         </div>
 
         <div className="w-full lg:w-2/3">
