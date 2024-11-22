@@ -25,12 +25,10 @@ const Navbar = () => {
 
   return (
     <nav className="sticky-navbar flex items-center justify-between w-full   px-4  h-[60px] py-6">
-      {/* Logo Section */}
       <div className="bg-primary rounded-md h-[40px] w-[40px]">
         <img src={logo} alt="logo" className="h-fit w-fit" />
       </div>
 
-      {/* Desktop Navigation */}
       <ul className="items-center gap-[20px] text-[1rem] text-[#424242] lg:flex hidden">
         <a href="#">
           <li className="before:w-0 hover:before:w-full before:bg-primary before:h-[2px] before:transition-all before:duration-300 before:absolute relative before:rounded-full before:bottom-[-2px] hover:text-primary transition-all duration-300 before:left-0 cursor-pointer capitalize">
@@ -90,7 +88,7 @@ const Navbar = () => {
           mobileSidebarOpen
             ? "translate-x-0 opacity-100 z-20"
             : "translate-x-[200px] opacity-0 z-[-1]"
-        } lg:hidden bg-primary text-white boxShadow p-4 text-start absolute z-100 top-[65px] right-0 max-w-max rounded-md transition-all duration-300`}
+        } lg:hidden bg-primary text-white boxShadow p-4 text-start absolute z-100 top-[65px] right-1 max-w-max rounded-md transition-all duration-300`}
       >
         <ul className="items-center gap-[2px] text-[1rem] flex flex-col">
           <li className="py-1">
