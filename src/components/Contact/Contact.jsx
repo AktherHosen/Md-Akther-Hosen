@@ -60,44 +60,6 @@ const Contact = () => {
               WhatsApp
             </motion.a>
           </div>
-          <div className="flex justify-center items-center gap-3 border px-6 py-0.5 rounded-md">
-            <Link to="https://github.com/AktherHosen/" target="_blank">
-              <img
-                src={GitHub}
-                alt="linkedin"
-                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[29px]"
-              />
-            </Link>
-
-            <Link
-              to="https://www.linkedin.com/in/md-akther-hosen"
-              target="_blank"
-            >
-              <img
-                src={Linkedin}
-                alt="linkedin"
-                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[38px]"
-              />
-            </Link>
-            <Link
-              to="https://www.facebook.com/nirjhor.nowshad/"
-              target="_blank"
-            >
-              <img
-                src={Facebook}
-                alt="linkedin"
-                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[38px]"
-              />
-            </Link>
-            <Link to="https://x.com/AktherHosen165" target="_blank">
-              {" "}
-              <img
-                src={Twitter}
-                alt="linkedin"
-                className="hover:text-primary transition-all  duration-300 hover:-translate-y-1 h-[38px]"
-              />
-            </Link>
-          </div>
         </div>
       </Container>
     </>

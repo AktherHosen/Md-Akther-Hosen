@@ -39,9 +39,9 @@ const Banner = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col min-h-[500px] lg:min-h-[calc(100vh-50px)] items-center justify-center text-center lg:text-start space-y-4">
+      <div className="w-full flex flex-col min-h-[calc(100vh-50px)] items-center justify-center text-center lg:text-start space-y-4">
         <motion.h1
-          className="text-3xl md:text-4xl lg:text-5xl md:max-w-xl lg:max-w-2xl font-extrabold font-caratte tracking-widest text-center"
+          className="text-4xl md:text-4xl lg:text-5xl md:max-w-xl lg:max-w-2xl font-extrabold font-caratte tracking-widest text-center"
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 const SectionTitle = ({ title, subTitle }) => {
   return (
     <motion.div
-      initial={{ x: -10 }}
-      whileInView={{ x: 0 }}
+      initial={{ y: 10 }}
+      whileInView={{ y: 0 }}
       transition={{ duration: "3" }}
       className="space-y-2 mt-10 mb-6"
     >

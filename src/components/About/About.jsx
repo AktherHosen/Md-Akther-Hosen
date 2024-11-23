@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="w-full lg:w-2/3">
           <motion.h4
-            initial={{ y: -10 }}
+            initial={{ y: 10 }}
             whileInView={{ y: 0 }}
             transition={{ duration: "1" }}
             className="uppercase font-semibold text-xl mb-2"
@@ -38,7 +38,7 @@ const About = () => {
           <div className="grid grid-cols-2 gap-2">
             <div>
               <motion.h4
-                initial={{ y: -10 }}
+                initial={{ y: 10 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: "1" }}
                 className="uppercase font-semibold text-xl mb-2"
@@ -51,7 +51,7 @@ const About = () => {
             </div>
             <div>
               <motion.h4
-                initial={{ y: -10 }}
+                initial={{ y: 10 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: "1" }}
                 className="uppercase font-semibold text-xl mb-2"

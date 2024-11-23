@@ -18,7 +18,7 @@ const Projects = () => {
           whileInView={{ y: 0 }}
           className="min-h-[400px] bg-blue-950 text-white p-4 rounded-2xl"
         >
-          <div className="">
+          <div>
             <img
               src="https://i.ibb.co.com/QXw5yNz/donorhive.png"
               alt=""
