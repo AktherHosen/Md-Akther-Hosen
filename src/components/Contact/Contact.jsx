@@ -37,9 +37,10 @@ const Contact = () => {
                 stiffness: 300,
                 damping: 25,
               }}
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=mdaktherhosen16@gmail.com"
+              title="mdaktherhosen16@gmail.com"
+              href="mailto:mdaktherhosen16@gmail.com"
               target="_blank"
-              className="flex items-center justify-between gap-x-2 bg-primary text-white border px-6 py-2.5 rounded-md"
+              className="mailto flex items-center justify-between gap-x-2 bg-primary text-white border px-6 py-2.5 rounded-md"
             >
               <AiOutlineMail size={20} />
               Email Me

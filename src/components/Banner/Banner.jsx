@@ -75,9 +75,10 @@ const Banner = () => {
             stiffness: 300,
             damping: 25,
           }}
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=mdaktherhosen16@gmail.com"
+          title="mdaktherhosen16@gmail.com"
+          href="mailto:mdaktherhosen16@gmail.com"
           target="_blank"
-          className="px-6 rounded-md bg-primary text-white py-2.5 flex items-center gap-1 w-fit"
+          className="mailto px-6 rounded-md bg-primary text-white py-2.5 flex items-center gap-1 w-fit"
         >
           Let's Talk <RiSendPlaneLine className="inline" />
         </motion.a>
