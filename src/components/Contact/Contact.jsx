@@ -1,7 +1,7 @@
 import Container from "../Container";
 import { motion } from "framer-motion";
 import { FaHandshake } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { BiMailSend } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
@@ -36,7 +36,7 @@ const Contact = () => {
               target="_blank"
               className="mailto flex items-center justify-between gap-x-2 bg-primary text-white border px-6 py-2.5 rounded-md"
             >
-              <AiOutlineMail size={20} />
+              <BiMailSend size={20} />
               Email
             </motion.a>
 
