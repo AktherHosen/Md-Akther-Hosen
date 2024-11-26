@@ -1,14 +1,8 @@
-import React from "react";
 import Container from "../Container";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaHandshake } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
-import Facebook from "../../assets/icons/facebook.png";
-import GitHub from "../../assets/icons/github.png";
-import Linkedin from "../../assets/icons/linkedin.png";
-import Twitter from "../../assets/icons/twitter.png";
 
 const Contact = () => {
   return (
@@ -16,7 +10,7 @@ const Contact = () => {
       <Container>
         <div
           id="contact"
-          className="flex flex-col justify-center items-center gap-y-4"
+          className="flex flex-col justify-center items-center gap-y-4 min-h-[405px]"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -43,7 +37,7 @@ const Contact = () => {
               className="mailto flex items-center justify-between gap-x-2 bg-primary text-white border px-6 py-2.5 rounded-md"
             >
               <AiOutlineMail size={20} />
-              Email Me
+              Email
             </motion.a>
 
             <motion.a
@@ -55,7 +49,7 @@ const Contact = () => {
               }}
               href="https://wa.me/1610945101"
               target="_blank"
-              className="flex items-center justify-between gap-x-2 text-primary border px-6 hover:bg-primary hover:text-white transition-colors duration-300 py-2.5 rounded-md"
+              className="flex items-center justify-between gap-x-1 text-primary border px-4 hover:bg-primary hover:text-white transition-colors duration-300 py-2.5 rounded-md"
             >
               <FaWhatsapp size={20} />
               WhatsApp

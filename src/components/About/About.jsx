@@ -10,8 +10,15 @@ const About = () => {
         id="about"
         className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-between p-0 "
       >
-        <div className="w-full lg:w-1/3 flex justify-center lg:justify-start ">
-          <img src={Profile} alt="image" className="h-80 w-72 z-10" />
+        <div className="relative flex justify-center lg:justify-start w-full">
+          <div className="relative h-80 w-72">
+            <div className="bg-primary opacity-90 rounded-xl absolute inset-0 -z-10 transform translate-x-4 -translate-y-4 h-[350px]"></div>
+            <img
+              src={Profile}
+              alt="image"
+              className="h-full w-full z-10 rounded-xl shadow-sm"
+            />
+          </div>
         </div>
 
         <div className="w-full lg:w-2/3">

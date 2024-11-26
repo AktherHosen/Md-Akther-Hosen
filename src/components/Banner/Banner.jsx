@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { RiSendPlaneLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
-import Container from "../Container";
+import { BiMailSend } from "react-icons/bi";
 
 const Banner = () => {
   const roles = [
@@ -39,7 +38,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col min-h-[calc(100vh-50px)] items-center justify-center text-center lg:text-start space-y-4">
+      <div className="w-full flex flex-col min-h-[505px] md:min-h-[calc(100vh-50px)] items-center justify-center text-center lg:text-start space-y-4">
         <motion.h1
           className="text-4xl md:text-4xl lg:text-5xl md:max-w-xl lg:max-w-2xl font-extrabold font-caratte tracking-widest text-center"
           variants={headingVariants}
@@ -78,9 +77,9 @@ const Banner = () => {
           title="mdaktherhosen16@gmail.com"
           href="mailto:mdaktherhosen16@gmail.com"
           target="_blank"
-          className="mailto px-6 rounded-md bg-primary text-white py-2.5 flex items-center gap-1 w-fit"
+          className="mailto px-6 rounded-md bg-primary text-white py-2.5 flex items-center justify-center gap-1 w-fit"
         >
-          Let's Talk <RiSendPlaneLine className="inline" />
+          Let's Talk <BiMailSend size={20} />
         </motion.a>
       </div>
     </>
