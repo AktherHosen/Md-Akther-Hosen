@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary: "#172554",
-        secondary: "#474E68",
+        // primary: "#172554",
+        primary: "#2C3335",
+        secondary: "#2C3335",
       },
       textColor: {
         primary: "#172554",
