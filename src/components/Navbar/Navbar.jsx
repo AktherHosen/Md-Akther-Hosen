@@ -5,6 +5,7 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
 import logo from "../../assets/portlogo.png";
+import { AlignLeft, X } from "lucide-react";
 
 const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -70,12 +71,12 @@ const Navbar = () => {
           animate={mobileSidebarOpen ? "open" : "closed"}
         >
           {mobileSidebarOpen ? (
-            <RiCloseLargeFill
+            <X
               className="text-[1.8rem] text-primary cursor-pointer lg:hidden flex"
               onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
             />
           ) : (
-            <FaBarsStaggered
+            <AlignLeft
               className="text-[1.8rem] text-primary cursor-pointer lg:hidden flex"
               onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
             />
