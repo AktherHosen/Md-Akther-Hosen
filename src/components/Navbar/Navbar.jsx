@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { FaBarsStaggered } from "react-icons/fa6";
-import { RiCloseLargeFill } from "react-icons/ri";
 import { motion } from "framer-motion";
-import { AiOutlineDownload } from "react-icons/ai";
 import logo from "../../assets/portlogo.png";
-import { AlignLeft, X } from "lucide-react";
+import { AlignLeft, X, Download } from "lucide-react";
 
 const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -60,7 +57,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
             className="bg-primary flex items-center gap-2 text-white uppercase text-xs font-bold px-4 py-2 rounded-md"
           >
-            Download Resume <AiOutlineDownload className="text-sm font-bold" />
+            <Download size={16} /> Download Resume
           </motion.a>
         </li>
       </ul>
@@ -88,7 +85,7 @@ const Navbar = () => {
       <aside
         className={`${
           mobileSidebarOpen ? "block" : "hidden"
-        } lg:hidden bg-primary text-white boxShadow p-4 text-start absolute top-[65px] right-1 max-w-[200px] rounded-md transition-all duration-300`}
+        } lg:hidden bg-primary text-white boxShadow p-4 text-start absolute top-[65px] right-1 max-w-[220px] rounded-md transition-all duration-300`}
       >
         <ul className="items-center gap-[2px] text-[1rem] flex flex-col">
           <li className="py-1">
@@ -129,10 +126,9 @@ const Navbar = () => {
               target="_blank"
               download="Akther_Hosen_Resume.pdf"
               whileTap={{ scale: 0.9 }}
-              className="bg-white flex items-center gap-2 text-primary uppercase text-xs font-bold px-2 py-2 rounded-md"
+              className="bg-white flex items-center gap-1 text-primary uppercase text-xs font-bold px-2 py-2 rounded-md"
             >
-              Download Resume{" "}
-              <AiOutlineDownload className="text-sm font-bold" />
+              <Download size={16} /> Download Resumes
             </motion.a>
           </li>
         </ul>
