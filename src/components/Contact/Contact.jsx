@@ -49,7 +49,7 @@ const Contact = () => {
               }}
               href="https://wa.me/1610945101"
               target="_blank"
-              className="flex items-center justify-between gap-x-1 text-primary border px-4 hover:bg-primary hover:text-white transition-colors duration-300 py-2.5 rounded-md"
+              className="flex items-center justify-between gap-x-1  border px-4  transition-colors duration-300 py-2.5 rounded-md"
             >
               <FaWhatsapp size={20} />
               WhatsApp
