@@ -38,19 +38,22 @@ const Banner = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col min-h-[505px] md:min-h-[calc(100vh-50px)] items-center justify-center text-center lg:text-start space-y-4">
+      <div className="w-full flex flex-col min-h-[505px] md:min-h-[calc(100vh-50px)]  justify-center lg:text-start space-y-4 px-6">
+        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-lucker">
+          Hi, I'm Akther
+        </h1>
         <motion.h1
-          className="text-4xl md:text-4xl lg:text-5xl md:max-w-xl lg:max-w-2xl font-extrabold font-caratte tracking-widest text-center"
+          className="text-lg md:text-2xl lg:text-3xl md:max-w-xl lg:max-w-2xl font-raleway tracking-widest"
           variants={headingVariants}
           initial="hidden"
           whileInView="visible"
         >
-          <span className="text-primary">
-            Crafting Digital Experiences That Make a Lasting Impact....
+          <span className="">
+            Crafting Digital Experiences That Make a Lasting Impact...
           </span>
         </motion.h1>
         <h3 className="text-lg">I'm your </h3>
-        <span className="uppercase text-xl text-primary font-semibold">
+        <span className="uppercase text-xl  font-semibold">
           <AnimatePresence mode="wait">
             <motion.span
               key={currentRoleIndex}
