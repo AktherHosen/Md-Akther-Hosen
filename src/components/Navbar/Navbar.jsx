@@ -25,14 +25,11 @@ const Navbar = () => {
     <>
       <nav className="sticky-navbar  w-full px-4 h-[60px] py-6 relative">
         <div className="flex justify-between items-start">
-          {/* Logo */}
           <div className=" rounded-md ">
             <img src={logo} alt="logo" className="h-[40px] w-[40px]" />
           </div>
-
-          {/* Center Tabs */}
           <div className="flex-1 flex justify-center">
-            <ul className="flex items-center bg-secondary text-white rounded-full p-1">
+            <ul className="flex items-center bg-bg-gray-400 text-white rounded-full p-1">
               <li
                 className={`${
                   activeTab === 1 && "!bg-primary !text-[#fff]"
