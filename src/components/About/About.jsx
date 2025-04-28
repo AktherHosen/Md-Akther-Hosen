@@ -3,6 +3,7 @@ import Container from "../Container";
 import Profile from "../../assets/profile.jpg";
 import Skils from "../Skils/Skils";
 import { motion } from "framer-motion";
+import SplitText from "../../utils/SplitText";
 const About = () => {
   return (
     <Container>
@@ -16,56 +17,51 @@ const About = () => {
             <img
               src={Profile}
               alt="image"
-              className="h-full w-full z-10 rounded-xl shadow-sm"
+              className="h-full w-full z-10 rounded-xl shadow-sm border-2 border-gray-700"
             />
           </div>
         </div>
 
-        <div className="w-full lg:w-2/3">
-          <motion.h4
-            initial={{ y: 10 }}
-            whileInView={{ y: 0 }}
-            transition={{ duration: "1" }}
+        <div className="w-full">
+          <SplitText
+            text="introduction"
             className="uppercase font-semibold text-xl mb-2"
-          >
-            introduction
-          </motion.h4>
-          <motion.p
-            initial={{ y: 10 }}
-            whileInView={{ y: 0 }}
-            transition={{ duration: "1" }}
-          >
-            I'm a skilled Web Developer with experience in JavaScript, and
-            expertise in framworks like React, Node.js. I'm a quick learner and
-            collaborate-closely with clients to create efficient, scalable, and
-            user-friendly solutions that solve real-world problem. <br />
-            Let's work together to bring your ideas life!
-          </motion.p>
+          ></SplitText>
+
+          <SplitText
+            text={
+              <>
+                I'm a skilled Web Developer with experience in JavaScript, &
+                expertise in frameworks like React, Node.js. I'm a quick learner
+                & collaborate closely with clients to create efficient,
+                scalable, & user-friendly solutions that solve real-world
+                problems. Let's work together to bring your ideas to life!
+              </>
+            }
+            className="text-sm md:text-lg text-wrap"
+          />
           <Skils />
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex justify-between gap-2">
             <div>
-              <motion.h4
-                initial={{ y: 10 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: "1" }}
+              <SplitText
+                text="education"
                 className="uppercase font-semibold text-xl mb-2"
-              >
-                education
-              </motion.h4>
-              <h5>BSc. (Hons.) in CSE</h5>
-              <h5 className="uppercase">BGC Trust University Bangladesh</h5>
-              <span>2020-2023</span>
+              ></SplitText>
+
+              <p className="text-sm md:text-lg">BSc. (Hons.) in CSE</p>
+              <p className="text-sm md:text-lg ">
+                BGC Trust University Bangladesh
+              </p>
+              <span className="text-sm md:text-lg">2020-2023</span>
             </div>
             <div>
-              <motion.h4
-                initial={{ y: 10 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: "1" }}
+              <SplitText
+                text="Experience"
                 className="uppercase font-semibold text-xl mb-2"
-              >
-                Experience
-              </motion.h4>
-              <h5>NA</h5>
+              ></SplitText>
+              <p className="text-sm md:text-lg">Jr. Web Developer</p>
+              <p className=" text-sm md:text-lg ">Devsbrain</p>
+              <span className="text-sm md:text-lg">Dec 2024 - continue</span>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiMailSend } from "react-icons/bi";
+import SplitText from "../../utils/SplitText";
 
 const Banner = () => {
   const roles = [
@@ -22,13 +23,13 @@ const Banner = () => {
   }, [roles.length]);
 
   const roleVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: -20 },
+    hidden: { opacity: 0, x: 20 },
+    visible: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: 20 },
   };
 
   const headingVariants = {
-    hidden: { opacity: 0, y: -40 },
+    hidden: { opacity: 0, x: 40 },
     visible: {
       opacity: 1,
       y: 0,
@@ -42,16 +43,15 @@ const Banner = () => {
         <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-lucker">
           Hi, I'm Akther
         </h1>
-        <motion.h1
-          className="text-lg md:text-2xl lg:text-3xl md:max-w-xl lg:max-w-2xl font-raleway tracking-widest"
-          variants={headingVariants}
-          initial="hidden"
-          whileInView="visible"
-        >
-          <span className="">
-            Crafting Digital Experiences That Make a Lasting Impact...
-          </span>
-        </motion.h1>
+        <SplitText
+          text={
+            <>
+              Crafting Digital Experiences <br /> That Make a Lasting Impact.
+            </>
+          }
+          className="text-lg md:text-xl lg:text-2xl md:max-w-xl lg:max-w-2xl font-raleway tracking-widest"
+        />
+
         <h3 className="text-lg">I'm your </h3>
         <span className="uppercase text-xl  font-semibold">
           <AnimatePresence mode="wait">
