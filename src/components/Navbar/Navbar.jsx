@@ -25,8 +25,6 @@ const Navbar = () => {
     <>
       <nav className="sticky-navbar w-full px-4 py-4 relative">
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
-          {/* Navigation links */}
-
           <div className="rounded-md hidden md:block">
             <img src={logo} alt="logo" className="h-[40px] w-[40px]" />
           </div>
