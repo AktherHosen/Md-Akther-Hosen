@@ -46,13 +46,13 @@ const Banner = () => {
         <SplitText
           text={
             <>
-              Crafting Digital Experiences <br /> That Make a Lasting Impact.
+              I'm Crafting Digital Experiences <br /> That Make a Lasting
+              Impact.
             </>
           }
           className="text-lg md:text-xl lg:text-2xl md:max-w-xl lg:max-w-2xl font-raleway tracking-widest"
         />
 
-        <h3 className="text-lg">I'm a</h3>
         <span className="uppercase text-sm  font-semibold">
           <AnimatePresence mode="wait">
             <motion.span
