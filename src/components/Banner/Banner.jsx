@@ -46,8 +46,8 @@ const Banner = () => {
         <SplitText
           text={
             <>
-              I'm Crafting Digital Experiences <br /> That Make a Lasting
-              Impact.
+              I'm Crafting Digital Experiences <br />
+              That Make a Lasting Impact.
             </>
           }
           className="text-lg md:text-xl lg:text-2xl md:max-w-xl lg:max-w-2xl font-raleway tracking-widest"
