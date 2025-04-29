@@ -20,7 +20,7 @@ const Projects = () => {
           initial={{ y: -20 }}
           transition={{ duration: "2" }}
           whileInView={{ y: 0 }}
-          className="min-h-[400px] bg-blue-950 text-white p-4 rounded-2xl"
+          className="min-h-[400px] bg-secondary text-white p-4 rounded-2xl"
         >
           <div>
             <img
@@ -57,13 +57,25 @@ const Projects = () => {
               opportunities. By fostering a supportive community, Donor Hive
               aims to save lives through seamless blood donation platform.
             </p>
-            <div className="flex flex-wrap text-xs gap-x-2 font-semibold">
-              <p className="text-blue-400">#React</p>
-              <p className="text-blue-500">#TailwindCSS</p>
-              <p className="text-green-500">#Node.js</p>
-              <p className="text-pink-500">#ExpressJS</p>
-              <p className="text-green-500">#MongoDB</p>
-              <p className="text-orange-500">#Firebase</p>
+            <div className="flex flex-wrap text-xs gap-x-2 gap-y-2 font-semibold">
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                React
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                TailwindCSS
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                Node.js
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                ExpressJS
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                MongoDB
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                Firebase
+              </p>
             </div>
           </div>
         </motion.div>
@@ -71,7 +83,7 @@ const Projects = () => {
           initial={{ y: -20 }}
           transition={{ duration: "3" }}
           whileInView={{ y: 0 }}
-          className="min-h-[400px] bg-blue-950 text-white p-4 rounded-2xl"
+          className="min-h-[400px] bg-secondary text-white p-4 rounded-2xl"
         >
           <div className="">
             <img
@@ -87,7 +99,7 @@ const Projects = () => {
                 <Link
                   to="https://blog-nest-9b582.web.app/"
                   target="_blank"
-                  className="  text-sm bg-gray-800 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                  className="  text-sm bg-secondary p-2 hover:bg-primary transition-all duration-300 rounded-full"
                 >
                   <FaLink className="text-white" />
                 </Link>
@@ -108,13 +120,25 @@ const Projects = () => {
               platform fosters community engagement by enabling users to follow
               each other and receive personalized updates.
             </p>
-            <div className="flex flex-wrap text-xs gap-x-2 font-semibold">
-              <p className="text-blue-400">#React</p>
-              <p className="text-blue-500">#TailwindCSS</p>
-              <p className="text-green-500">#Node.js</p>
-              <p className="text-pink-500">#ExpressJS</p>
-              <p className="text-green-500">#MongoDB</p>
-              <p className="text-orange-500">#Firebase</p>
+            <div className="flex flex-wrap text-xs gap-2 font-semibold">
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                React
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                TailwindCSS
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                Node.js
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                ExpressJS
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                MongoDB
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                Firebase
+              </p>
             </div>
           </div>
         </motion.div>
@@ -122,7 +146,7 @@ const Projects = () => {
           initial={{ y: -20 }}
           transition={{ duration: "4" }}
           whileInView={{ y: 0 }}
-          className="min-h-[400px] bg-blue-950 text-white p-4 rounded-2xl"
+          className="min-h-[400px] bg-secondary text-white p-4 rounded-2xl"
         >
           <div className="">
             <img
@@ -159,13 +183,25 @@ const Projects = () => {
               categories, filter by customization options, and switch themes for
               a personalized experience.
             </p>
-            <div className="flex flex-wrap text-xs gap-x-2 font-semibold">
-              <p className="text-blue-400">#React</p>
-              <p className="text-blue-500">#TailwindCSS</p>
-              <p className="text-green-500">#Node.js</p>
-              <p className="text-pink-500">#ExpressJS</p>
-              <p className="text-green-500">#MongoDB</p>
-              <p className="text-orange-500">#Firebase</p>
+            <div className="flex flex-wrap text-xs gap-2 font-semibold">
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                React
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                TailwindCSS
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                Node.js
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                ExpressJS
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                MongoDB
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                Firebase
+              </p>
             </div>
           </div>
         </motion.div>

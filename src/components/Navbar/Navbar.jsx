@@ -28,10 +28,10 @@ const Navbar = () => {
           <div className="rounded-md hidden md:block">
             <img src={logo} alt="logo" className="h-[40px] w-[40px]" />
           </div>
-          <ul className="flex items-center bg-gray-600 text-white rounded-full p-1 mb-4 md:mb-0">
+          <ul className="flex items-center bg-secondary text-white rounded-full p-1 mb-4 md:mb-0">
             <li
               className={`${
-                activeTab === 1 && "!bg-primary !text-[#fff]"
+                activeTab === 1 && "!bg-gray-600 !text-[#fff]"
               } px-4 py-1 transition duration-300 rounded-full cursor-pointer`}
               onClick={() => setactiveTab(1)}
             >
@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li
               className={`${
-                activeTab === 2 && "!bg-primary !text-[#fff]"
+                activeTab === 2 && "!bg-gray-600 !text-[#fff]"
               } px-4 py-1 transition duration-300 rounded-full cursor-pointer`}
               onClick={() => setactiveTab(2)}
             >
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li
               className={`${
-                activeTab === 3 && "!bg-primary !text-[#fff]"
+                activeTab === 3 && "!bg-gray-600 !text-[#fff]"
               } px-4 py-1 transition duration-300 rounded-full cursor-pointer`}
               onClick={() => setactiveTab(3)}
             >
@@ -55,7 +55,7 @@ const Navbar = () => {
             </li>
             <li
               className={`${
-                activeTab === 4 && "!bg-primary !text-[#fff]"
+                activeTab === 4 && "!bg-gray-600 !text-[#fff]"
               } px-4 py-1 transition duration-300 rounded-full cursor-pointer`}
               onClick={() => setactiveTab(4)}
             >

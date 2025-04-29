@@ -52,8 +52,8 @@ const Banner = () => {
           className="text-lg md:text-xl lg:text-2xl md:max-w-xl lg:max-w-2xl font-raleway tracking-widest"
         />
 
-        <h3 className="text-lg">I'm your </h3>
-        <span className="uppercase text-xl  font-semibold">
+        <h3 className="text-lg">I'm a</h3>
+        <span className="uppercase text-sm  font-semibold">
           <AnimatePresence mode="wait">
             <motion.span
               key={currentRoleIndex}
@@ -62,7 +62,7 @@ const Banner = () => {
               animate="visible"
               exit="exit"
               transition={{
-                duration: 0.8,
+                duration: 1.2,
               }}
               className="inline-block"
             >

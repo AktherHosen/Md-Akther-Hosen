@@ -2,7 +2,6 @@ import React from "react";
 import Container from "../Container";
 import Profile from "../../assets/profile.jpg";
 import Skils from "../Skils/Skils";
-import { motion } from "framer-motion";
 import SplitText from "../../utils/SplitText";
 const About = () => {
   return (
@@ -13,7 +12,7 @@ const About = () => {
       >
         <div className="relative flex justify-center lg:justify-start w-full">
           <div className="relative h-80 w-72">
-            <div className="bg-gray-600 opacity-90 rounded-xl absolute inset-0 -z-10 transform translate-x-4 -translate-y-4 h-[350px]"></div>
+            <div className="bg-secondary opacity-90 rounded-xl absolute inset-0 -z-10 transform translate-x-4 -translate-y-4 h-[350px]"></div>
             <img
               src={Profile}
               alt="image"
