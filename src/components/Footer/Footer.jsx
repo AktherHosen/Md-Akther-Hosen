@@ -7,16 +7,12 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="px-6 mb-6">
-      <div className="bg-secondary w-full min-h-[310px] rounded-2xl px-6 py-8 flex flex-col justify-between">
+      <div className="bg-secondary w-full min-h-[250px] rounded-2xl px-6 py-8 flex flex-col justify-between">
         <div>
-          <h4 className="text-gray-300 text-sm uppercase font-semibold mb-2">
-            Contact Us
-          </h4>
-
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-400 lg:max-w-xl leading-tight">
-              Let's <span className="text-white">Discuss</span> your vision{" "}
-              <span className="text-white">with us!</span>
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-400 lg:max-w-xl leading-tight">
+              Ready to bring your ideas to life? <br />
+              <span className="text-white">Let's connect.</span>
             </h1>
 
             <div className="text-gray-300 text-sm lg:text-right space-y-1">

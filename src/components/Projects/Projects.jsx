@@ -4,13 +4,17 @@ import { FaGithub, FaLink } from "react-icons/fa";
 import SectionTitle from "../SectionTitle";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import SplitText from "../../utils/SplitText";
 const Projects = () => {
   return (
     <Container>
-      <SectionTitle title="Latest Project" />
+      <SplitText
+        text="Latest Project"
+        className="text-xl font-bold uppercase underline underline-offset-4"
+      />
       <div
         id="project"
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 "
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4"
       >
         <motion.div
           initial={{ y: -20 }}
