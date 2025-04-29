@@ -13,11 +13,11 @@ const About = () => {
       >
         <div className="relative flex justify-center lg:justify-start w-full">
           <div className="relative h-80 w-72">
-            <div className="bg-primary opacity-90 rounded-xl absolute inset-0 -z-10 transform translate-x-4 -translate-y-4 h-[350px]"></div>
+            <div className="bg-gray-600 opacity-90 rounded-xl absolute inset-0 -z-10 transform translate-x-4 -translate-y-4 h-[350px]"></div>
             <img
               src={Profile}
               alt="image"
-              className="h-full w-full z-10 rounded-xl shadow-sm border-2 border-gray-700"
+              className="h-full w-full z-10 rounded-xl shadow-sm "
             />
           </div>
         </div>
@@ -41,7 +41,7 @@ const About = () => {
             className="text-sm md:text-lg text-wrap"
           />
           <Skils />
-          <div className="flex justify-between gap-2">
+          <div className="flex justify-between">
             <div>
               <SplitText
                 text="education"
@@ -61,7 +61,7 @@ const About = () => {
               ></SplitText>
               <p className="text-sm md:text-lg">Jr. Web Developer</p>
               <p className=" text-sm md:text-lg ">Devsbrain</p>
-              <span className="text-sm md:text-lg">Dec 2024 - continue</span>
+              <span className="text-sm md:text-lg">Dec 24 - Continue</span>
             </div>
           </div>
         </div>
