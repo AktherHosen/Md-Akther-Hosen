@@ -1,4 +1,3 @@
-import Profile from "../../assets/profile.jpg";
 import { BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaGithub } from "react-icons/fa";
@@ -6,11 +5,11 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="px-6 mb-6">
+    <div className="px-6 mb-6 font-rubik">
       <div className="bg-secondary w-full min-h-[250px] rounded-2xl px-6 py-8 flex flex-col justify-between">
         <div>
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-400 lg:max-w-xl leading-tight">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 lg:max-w-xl leading-tight">
               Ready to bring your ideas to life? <br />
               <span className="text-white">Let's connect.</span>
             </h1>

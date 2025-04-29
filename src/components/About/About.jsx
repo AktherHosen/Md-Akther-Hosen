@@ -8,7 +8,7 @@ const About = () => {
     <Container>
       <div
         id="about"
-        className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-between p-0 "
+        className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-between p-0 font-rubik"
       >
         <div className="relative flex justify-center lg:justify-start w-full">
           <div className="relative h-80 w-72">

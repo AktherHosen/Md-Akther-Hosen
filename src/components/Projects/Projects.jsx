@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container";
 import { FaGithub, FaLink } from "react-icons/fa";
-import SectionTitle from "../SectionTitle";
+import { HiOutlineLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SplitText from "../../utils/SplitText";
@@ -14,7 +14,7 @@ const Projects = () => {
       />
       <div
         id="project"
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-6 font-rubik"
       >
         <motion.div
           initial={{ y: -20 }}
@@ -36,20 +36,20 @@ const Projects = () => {
                 <Link
                   to="https://donor-hive.web.app/"
                   target="_blank"
-                  className="  text-sm bg-gray-800 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                  className="   text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
                 >
-                  <FaLink className="text-white" />
+                  <HiOutlineLink className="text-white" />
                 </Link>
                 <Link
                   to="https://github.com/AktherHosen/donorhive-client"
                   target="_blank"
-                  className="  text-sm bg-gray-800 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                  className="  text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
                 >
                   <FaGithub className="text-white" />
                 </Link>
               </div>
             </div>
-            <p className="text-xs text-gray-200 text-justify">
+            <p className="text-[0.8rem] lg:text-[0.8rem] text-gray-100 lg:text-justify">
               Donor Hive is an innovative platform designed to connect blood
               donors with recipients in need. This user-friendly web application
               allows individuals to create profiles, track donation history, and
@@ -99,20 +99,20 @@ const Projects = () => {
                 <Link
                   to="https://blog-nest-9b582.web.app/"
                   target="_blank"
-                  className="  text-sm bg-secondary p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                  className="text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
                 >
-                  <FaLink className="text-white" />
+                  <HiOutlineLink className="text-white" />
                 </Link>
                 <Link
                   to="https://github.com/aktherHosen/blogNest-client/"
                   target="_blank"
-                  className="text-sm bg-gray-800 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                  className="text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
                 >
                   <FaGithub className="text-white" />
                 </Link>
               </div>
             </div>
-            <p className="text-xs text-gray-200 text-justify">
+            <p className="text-[0.8rem] lg:text-[0.8rem] text-gray-200 lg:text-justify">
               BlogNest is a dynamic blogging platform that empowers users to
               create, share, and discover engaging content. With a user-friendly
               interface, it allows authors to publish posts easily, interact
@@ -162,20 +162,20 @@ const Projects = () => {
                 <Link
                   to="https://artcraft-54e63.web.app/"
                   target="_blank"
-                  className="  text-sm bg-gray-800 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                  className="text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
                 >
-                  <FaLink className="text-white" />
+                  <HiOutlineLink className="text-white" />
                 </Link>
                 <Link
                   to="https://github.com/AktherHosen/artCraft-client"
                   target="_blank"
-                  className="  text-sm bg-gray-800 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                  className="text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
                 >
                   <FaGithub className="text-white" />
                 </Link>
               </div>
             </div>
-            <p className="text-xs text-gray-200 text-justify">
+            <p className="text-[0.8rem] lg:text-[0.8rem] text-gray-200 lg:text-justify">
               ArtCraft is a fully responsive online marketplace for artists and
               crafters, optimized for all devices. Users can register, log in,
               and authenticate via email or third-party services like Google and

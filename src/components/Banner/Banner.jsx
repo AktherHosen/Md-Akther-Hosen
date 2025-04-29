@@ -28,21 +28,22 @@ const Banner = () => {
     exit: { opacity: 0, x: 20 },
   };
 
-  const headingVariants = {
-    hidden: { opacity: 0, x: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1, ease: "easeOut" },
-    },
-  };
-
   return (
     <>
-      <div className="w-full flex flex-col min-h-[calc(100vh-72px)] justify-center lg:text-start space-y-4 px-6">
-        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-lucker">
-          Hi, I'm Akther
+      <div className="w-full flex flex-col min-h-[calc(100vh-72px)] justify-center lg:text-start space-y-4 px-6 my-20">
+        <h1 className="text-4xl flex items-start gap-1 sm:text-4xl md:text-5xl lg:text-6xl font-lucker">
+          <span>Hi, I'm Akther</span>
+          <motion.div
+            className="w-2 h-2 rounded-full bg-green-400"
+            animate={{ scale: [0.8, 1, 0.8] }}
+            transition={{
+              duration: 1.1,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
         </h1>
+
         <SplitText
           text={
             <>

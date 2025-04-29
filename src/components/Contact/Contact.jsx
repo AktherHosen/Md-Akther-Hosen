@@ -10,7 +10,7 @@ const Contact = () => {
       <Container>
         <div
           id="contact"
-          className="flex flex-col justify-center items-center gap-y-4 min-h-[405px]"
+          className="flex flex-col justify-center items-center gap-y-4 min-h-[405px] font-rubik"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -20,10 +20,8 @@ const Contact = () => {
           >
             <FaHandshake size={60} className="px-1" />
           </motion.div>
-          {/* <h1 className="text-3xl font-semibold font-primary max-w-md text-center">
-            Discuss me about your next Project
-          </h1> */}
-          <h1 className="text-2xl sm:text-3xl text-gray-400 font-semibold max-w-md text-center">
+
+          <h1 className="text-2xl sm:text-3xl text-gray-300 font-semibold max-w-md text-center">
             Let's <span className="text-white">discuss</span> your next project
             and make it <span className="text-white">remarkable</span>.
           </h1>

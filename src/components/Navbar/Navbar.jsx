@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky-navbar w-full px-4 py-4 relative">
+      <nav className="sticky-navbar w-full px-4 py-4 relative font-rubik">
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
           <div className="rounded-md hidden md:block">
             <img src={logo} alt="logo" className="h-[40px] w-[40px]" />
