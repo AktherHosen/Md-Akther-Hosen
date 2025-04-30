@@ -30,7 +30,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col min-h-[calc(100vh-72px)] justify-center lg:text-start space-y-4 px-6 my-20">
+      <div className="w-full flex flex-col min-h-[calc(90vh-72px)] justify-center lg:text-start space-y-4 px-6 my-4">
         <h1 className="text-4xl flex items-start gap-1 sm:text-4xl md:text-5xl lg:text-6xl font-lucker">
           <span>Hi, I'm Akther</span>
           <motion.div
