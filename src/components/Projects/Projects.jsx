@@ -142,6 +142,63 @@ const Projects = () => {
             </div>
           </div>
         </motion.div>
+
+        <motion.div
+          initial={{ y: -20 }}
+          transition={{ duration: "4" }}
+          whileInView={{ y: 0 }}
+          className="min-h-[400px] bg-secondary text-white p-4 rounded-2xl"
+        >
+          <div className="">
+            <img
+              src="https://i.ibb.co.com/hRMb0swX/project4.png"
+              alt=""
+              className="rounded-2xl h-[190px] w-full"
+            />
+          </div>
+          <div className="space-y-2 mt-4">
+            <div className="flex items-center justify-between">
+              <h2 className="font-bold text-2xl">E-Restaurant</h2>
+              <div className=" top-4 right-0 flex gap-1">
+                <Link
+                  to="https://restaurant-beige-zeta.vercel.app/"
+                  target="_blank"
+                  className="text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                >
+                  <HiOutlineLink className="text-white" />
+                </Link>
+                <Link
+                  to="https://github.com/AktherHosen/Restaurant"
+                  target="_blank"
+                  className="text-[1.1rem] bg-gray-900 p-2 hover:bg-primary transition-all duration-300 rounded-full"
+                >
+                  <FaGithub className="text-white" />
+                </Link>
+              </div>
+            </div>
+            <p className="text-[0.8rem] lg:text-[0.8rem] text-gray-200 lg:text-justify">
+              A modern, responsive restaurant landing page featuring smooth
+              navigation and engaging visuals. The design showcases featured
+              dishes, promotes key offerings, and includes a functional booking
+              form to reserve tables directly from the site. Optimized for both
+              performance and user experience.
+            </p>
+            <div className="flex flex-wrap text-xs gap-2 font-semibold">
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                React
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                TailwindCSS
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                JavaScript
+              </p>
+              <p className="text-gray-300 border rounded-full px-2 py-[0.1rem] border-gray-600">
+                Swiper.js
+              </p>
+            </div>
+          </div>
+        </motion.div>
         <motion.div
           initial={{ y: -20 }}
           transition={{ duration: "4" }}
