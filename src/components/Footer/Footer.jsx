@@ -36,35 +36,27 @@ const Footer = () => {
             Md. Akther Hosen.
           </h4>
 
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <Link to="https://github.com/AktherHosen/" target="_blank">
-              <FaGithub
-                size={20}
-                className="hover:-translate-y-1 transition-transform"
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                className="hover:-translate-y-1  transition-all duration-500 h-[26px]"
               />
             </Link>
             <Link
               to="https://www.linkedin.com/in/md-akther-hosen"
               target="_blank"
             >
-              <BsLinkedin
-                size={20}
-                className="hover:-translate-y-1 transition-transform"
+              <img
+                src="https://skillicons.dev/icons?i=linkedin"
+                className="hover:-translate-y-1  transition-all duration-500 h-6"
               />
             </Link>
-            <Link
-              to="https://www.facebook.com/nirjhor.nowshad/"
-              target="_blank"
-            >
-              <FaFacebookSquare
-                size={20}
-                className="hover:-translate-y-1 transition-transform"
-              />
-            </Link>
+
             <Link to="https://x.com/AktherHosen165" target="_blank">
-              <FaXTwitter
-                size={20}
-                className="hover:-translate-y-1 transition-transform"
+              <img
+                src="https://skillicons.dev/icons?i=twitter"
+                className="hover:-translate-y-1  transition-all duration-500 h-6"
               />
             </Link>
           </div>
