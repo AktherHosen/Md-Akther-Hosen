@@ -40,6 +40,10 @@ const Skils = () => {
           src="https://skillicons.dev/icons?i=mongodb"
           className="hover:-translate-y-1.5 transition-all duration-500 h-8 sm:h-10"
         />
+        <img
+          src="https://skillicons.dev/icons?i=figma"
+          className="hover:-translate-y-1.5 transition-all duration-500 h-8 sm:h-10"
+        />
       </div>
     </>
   );
